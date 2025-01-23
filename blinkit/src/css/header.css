@@ -1,0 +1,110 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: "Okra", Helvetica, sans-serif;
+}
+
+/* Left Section: Logo and Location */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-logo svg {
+  height: 30px;
+}
+
+.header-location p {
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Center Search Bar */
+.search-bar {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.search-input {
+  width: 90%;
+  padding: 10px 15px;
+  font-size: 14px;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #54b226;
+  box-shadow: 0 0 4px rgba(84, 178, 38, 0.5);
+}
+
+/* Right Section: Profile and Cart Buttons */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.profile-button {
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.profile-button:hover {
+  color: #54b226;
+}
+
+.cart-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:#0C831F;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 140px;
+  height: 40px;
+  transition: background-color 0.3s ease;
+}
+
+.cart-button:hover {
+  background-color: #3a8a1c;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search-bar {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .header-left,
+  .header-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+}

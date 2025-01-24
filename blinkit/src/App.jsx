@@ -4,7 +4,9 @@ import './App.css'
 import { Home } from './pages/Home'
 
 function App() {
- 
+//  const Applayout = ()=>{
+  
+//  }
   return (
     <>
       <Routes>
@@ -13,5 +15,4 @@ function App() {
     </>
   )
 }
-
 export default App

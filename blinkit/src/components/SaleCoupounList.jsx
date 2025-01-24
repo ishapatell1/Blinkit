@@ -1,0 +1,1 @@
+<img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/layout-engine/2023-03/babycare-WEB.jpg" alt="masthead_web_baby_care" width="335.40000000000003" height="195" loading="lazy"></img>

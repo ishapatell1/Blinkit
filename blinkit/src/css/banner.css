@@ -1,0 +1,32 @@
+/* Hide the coupon list on smaller screens */
+.coupon-list {
+    display: none;
+    margin-top: 1em;
+    margin-bottom: 2em;
+  }
+  
+  /* Show hero image on smaller screens */
+  .hero-image-small {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  /* For larger screens (above 1000x770) */
+  @media (min-width: 1001px) {
+    .hero-image-small {
+      display: none; /* Hide the small hero image */
+    }
+    
+    .coupon-list {
+      display: flex;
+      gap: 1em;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .coupon-image {
+      width: 300px;
+      height: auto;
+    }
+  }

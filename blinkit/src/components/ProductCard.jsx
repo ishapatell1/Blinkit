@@ -14,7 +14,6 @@ export const ProductCard = () => {
 
     return (
         <>
-            <h1>Product Card</h1>
             <div className="product-list">
                 {products.map((product) => (
                     <div key={product.id} className="product-card">

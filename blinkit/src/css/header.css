@@ -1,13 +1,15 @@
 .header {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1em 2em;
+  padding: 0.1em 0.2em;
   background-color: #ffffff;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
   z-index: 1000;
+  overflow: hidden;
   font-family: "Okra", Helvetica, sans-serif;
 }
 
@@ -93,8 +95,8 @@
 /* Responsiveness */
 @media (max-width: 768px) {
   .header{
+    width: 80%;
     padding: 0.1em 0.2em;
-    width: 100%;
     top : 0; 
     margin-bottom: 1em;
   }

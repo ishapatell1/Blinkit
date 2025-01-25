@@ -1,8 +1,9 @@
 import "../css/banner.css";
+
 export const SaleCoupounList = () => {
     return (
       <>
-  
+    
         {/* For smaller screens */}
         <img
           className="hero-image-small"

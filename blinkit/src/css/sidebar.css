@@ -1,0 +1,28 @@
+ /* Sidebar */
+ .sidebar {
+    width: 240px;
+    background-color: #ffffff;
+    padding: 1rem;
+    border-right: 1px solid #e0e0e0;
+    height: calc(100vh - 4rem); /* Full height minus header */
+    position: sticky;
+    top: 4rem; /* Keep it below the header */
+    overflow-y: auto;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .sidebar li:hover {
+    background-color: #f1f1f1;
+  }

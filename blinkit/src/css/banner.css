@@ -11,6 +11,10 @@
     width: 100%;
     height: auto;
   }
+
+  .category-banner{
+    background-color: #F4F6FB ;
+  }
   
   /* For larger screens (above 1000x770) */
   @media (min-width: 1001px) {

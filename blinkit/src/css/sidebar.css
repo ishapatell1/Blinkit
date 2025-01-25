@@ -31,7 +31,10 @@
     transition: background-color 0.2s;
     font-weight: 500;
   }
-
+  .sidebar ul li.active {
+    background-color:#DBF5CE;
+    font-weight: bold;
+  }
   .sidebar img{
     background-color: #f1f1f1;
     height: 3.5em;

@@ -1,15 +1,16 @@
 import "../css/banner.css"; 
-
+import { useState } from "react";
 export const CategoryBanner = ()=>{
+const [categoryName, setCategoryName] = useState("")
     return (
        <div className="category-banner">
-        <p>Vegetable</p>
+        <p>{categoryName}</p>
         <div className="category-filter">
             <select>
-                <option>Relevance</option>
-                <option>Price(High to Low)</option>
-                <option>Price (Low to High)</option>
-                <option>Discount</option>
+                <option value="relevance">Relevance</option>
+                <option value= "hightolow">Price(High to Low)</option>
+                <option value= "lowtohigh">Price (Low to High)</option>
+                <option value= "maxdiscount">Discount</option>
             </select>
         </div>
        </div>

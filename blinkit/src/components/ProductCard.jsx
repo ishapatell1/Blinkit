@@ -1,16 +1,8 @@
+
 import "../css/productcard.css";
 import { data } from "../utils/data";
 
-export const ProductCard = () => {
-    const { categories } = data;
-    // Destructure and access products
-    const getProductData = () => {
-        const products = categories.flatMap(category => category.products);
-        return products;
-    };
-
-    // Call the function to get products
-    const products = getProductData();
+export const ProductCard = ({products}) => {
 
     return (
         <>

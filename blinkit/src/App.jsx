@@ -23,7 +23,7 @@ function App() {
         <Route  element = {<Applayout/>}>
         <Route index element = {<Home/>}/>
         <Route path = "/cart"  element = {<Cart/>}/>
-        <Route path = "/cn/:id" element = {<ProductList/>}/>
+        <Route path = "/cn/:categoryId" element = {<ProductList/>}/>
         <Route path = "/s" element = {<Search/>}/>
         <Route path = "/prdetail/:id" element = {<ProductDetail/>}/>
         </Route>

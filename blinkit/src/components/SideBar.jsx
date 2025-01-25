@@ -1,14 +1,14 @@
 import React from 'react'
-import "../css/productcard.css"
+import "../css/sidebar.css"
+import {data} from "../utils/data"
 export const SideBar = () => {
+    const {categories} = data; 
   return (
     <aside className="sidebar">
       <ul>
-        <li>Fresh Vegetables</li>
-        <li>Fresh Fruits</li>
-        <li>Exotics</li>
-        <li>Leafy Greens</li>
-        <li>Mangoes & Melons</li>
+      {categories.map((category)=>(
+        <li key = {category.id}>{category.name}</li>
+      ))}
       </ul>
     </aside>
   )

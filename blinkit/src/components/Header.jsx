@@ -1,7 +1,14 @@
-import React from "react";
+import React, {useState} from "react";
 import "../css/header.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 export const Header = () => {
+  const navigate = useNavigate()
+  const [search, setSearch] = useState("")
+  const handleSearch = () => {
+    if (search.trim()) {
+      navigate(`/search?q=${encodeURIComponent(search)}`); // Navigate to the Search page with query parameter
+    }
+  };
   return (
     <div className="header">
       
@@ -16,13 +23,19 @@ export const Header = () => {
           <p className="location">Bengaluru, Karnataka, India <span className="dropdown">▼</span></p>
         </div>
         </div>   
+       
       <div className="search-bar">
         <input
           type="text"
           placeholder="Search for groceries and essentials"
           className="search-input"
+          onChange={(e)=>setSearch(e.target.value.toLowerCase())}
+          onClick={handleSearch}
+          value={search}
         />
+          
       </div>
+   
       <div className="header-right">
         <button className="profile-button">Login</button>
         <Link to = "/cart">

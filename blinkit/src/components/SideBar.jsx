@@ -7,7 +7,6 @@ export const SideBar = ({selectedCategory}) => {
     const {categories} = data; 
   return (
     <aside className="sidebar">
-       
       <ul>
       {categories.map((category)=>(
         <li key = {category.id}   className={selectedCategory?.id === category.id ? "active" : ""}>

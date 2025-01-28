@@ -25,6 +25,7 @@ export const data = {
           }
         ]
       },
+//  https://cdn.zeptonow.com/production/tr:w-420,ar-486-333,pr-true,f-auto,q-80/cms/category/2b5f2be5-cada-4cd7-b0af-e46c0c065f71.png 640w, https://cdn.zeptonow.com/production/tr:w-420,ar-486-333,pr-true,f-auto,q-80/cms/category/2b5f2be5-cada-4cd7-b0af-e46c0c065f71.png 750w, https://cdn.zeptonow.com/production/tr:w-420,ar-486-333,pr-true,f-auto,q-80/cms/category/2b5f2be5-cada-4cd7-b0af-e46c0c065f71.png 828w, https://cdn.zeptonow.com/production/tr:w-420,ar-486-333,pr-true,f-auto,q-80/cms/category/2b5f2be5-cada-4cd7-b0af-e46c0c065f71.png 1080w, https://cdn.zeptonow.com/production/tr:w-420,ar-486-333,pr-true,f-auto,q-80/cms/category/2b5f2be5-cada-4cd7-b0af-e46c0c065f71.png 1200w, https://cdn.zeptonow.com/production/tr:w-420,ar-486-333,pr-true,f-auto,q-80/cms/category/2b5f2be5-cada-4cd7-b0af-e46c0c065f71.png 1920w, https://cdn.zeptonow.com/production/tr:w-420,ar-486-333,pr-true,f-auto,q-80/cms/category/2b5f2be5-cada-4cd7-b0af-e46c0c065f71.png 2048w, https://cdn.zeptonow.com/production/tr:w-420,ar-486-333,pr-true,f-auto,q-80/cms/category/2b5f2be5-cada-4cd7-b0af-e46c0c065f71.png 3840w" src="https://cdn.zeptonow.com/production/tr:w-420,ar-486-333,pr-true,f-auto,q-80/cms/category/2b5f2be5-cada-4cd7-b0af-e46c0c065f71.png" style="color: transparent; object-fit: contain;"></img>
       {
         "id": 2,
         "name": "Dairy & Bakery",
@@ -33,7 +34,7 @@ export const data = {
           {
             "id": 201,
             "name": "Amul Butter",
-            "image_url": "https://via.placeholder.com/150",
+            "image_url": "https://cdn.zeptonow.com/production/tr:w-420,ar-486-333,pr-true,f-auto,q-80/cms/category/2b5f2be5-cada-4cd7-b0af-e46c0c065f71.png",
             "price": 50.00,
             "discount": 0,
             "unit": "100 g",
@@ -42,7 +43,7 @@ export const data = {
           {
             "id": 202,
             "name": "Brown Bread",
-            "image_url": "https://via.placeholder.com/150",
+            "image_url": "https://cdn.zeptonow.com/production/tr:w-420,ar-486-333,pr-true,f-auto,q-80/cms/category/2b5f2be5-cada-4cd7-b0af-e46c0c065f71.png",
             "price": 30.00,
             "discount": 5,
             "unit": "400 g",
@@ -58,7 +59,7 @@ export const data = {
           {
             "id": 301,
             "name": "Lays Chips (Classic Salted)",
-            "image_url": "https://via.placeholder.com/150",
+            "image_url": "https://cdn.zeptonow.com/production/tr:w-420,ar-486-333,pr-true,f-auto,q-80/cms/category/2b5f2be5-cada-4cd7-b0af-e46c0c065f71.png",
             "price": 20.00,
             "discount": 2,
             "unit": "52 g",
@@ -183,7 +184,7 @@ export const data = {
           {
             "id": 801,
             "name": "Lays Chips (Classic Salted)",
-            "image_url": "https://via.placeholder.com/150",
+            "image_url": " https://cdn.zeptonow.com/production/tr:w-420,ar-486-333,pr-true,f-auto,q-80/cms/category/2b5f2be5-cada-4cd7-b0af-e46c0c065f71.png ",
             "price": 20.00,
             "discount": 2,
             "unit": "52 g",

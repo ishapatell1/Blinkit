@@ -59,3 +59,7 @@
     cursor: not-allowed;
 }
 
+.item-quantity{
+    display: flex;
+    float: right;
+}

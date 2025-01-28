@@ -1,6 +1,5 @@
 
 import "../css/productcard.css";
-import { data } from "../utils/data";
 import { useCart } from "../context/CartContext";
 export const ProductCard = ({products}) => {
     const {addtoCart} = useCart();

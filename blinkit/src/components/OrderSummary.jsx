@@ -1,7 +1,9 @@
 import React from 'react'
+import { AddressManager } from './AddressManager'
 
 export const OrderSummary = () => {
   return (
-    <div>OrderSummary</div>
+    <div>OrderSummary
+    <AddressManager/></div>
   )
 }

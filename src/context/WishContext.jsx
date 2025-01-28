@@ -1,6 +1,6 @@
 import {  createContext, useContext, useReducer } from "react";
-import {wishReducer} from "../reducer/WishReducer"; 
-import { initialState } from "../reducer/CartReducer";
+import {wishReducer} from "../reducer/wishReducer"; 
+import { initialState } from "../reducer/cartReducer";
 const WishContext = createContext()
 export const WishProvider = ({children})=>{
     const [state,dispatch] = useReducer(wishReducer,initialState); 

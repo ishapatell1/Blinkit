@@ -11,13 +11,14 @@ import { SavedList } from './pages/SavedList'
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css"; 
 function App() {
+  
  const Applayout = ()=>{
-  const notify = () => toast("Wow so easy!");
+  const notify = () => toast("Hey There, Don't Forget to Invest your money rather than spending on silly items.");
   notify()
   return(
     <>
     <ToastContainer/>
-    <Header/>
+    <Header />
     <Outlet/>
     </>
   )
@@ -29,10 +30,10 @@ function App() {
         <Route index element = {<Home/>}/>
         <Route path = "/cart"  element = {<Cart/>}/>
         <Route path = "/cn/:categoryId" element = {<ProductList/>}/>
-        <Route path = "/s" element = {<Search/>}/>
         <Route path = "/prdetail/:id" element = {<ProductDetail/>}/>
         <Route path = "/saved" element = {<SavedList/>}/>
         </Route>
+        <Route path = "/s" element = {<Search/>}/>
       </Routes>
     </>
   )

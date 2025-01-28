@@ -1,10 +1,15 @@
 
 import "../css/productcard.css";
 import { data } from "../utils/data";
-
+import { useCart } from "../context/CartContext";
 export const ProductCard = ({products}) => {
-
+    const {addtoCart} = useCart();
+    const handleAddtoCart = (products)=>{
+        const item = {id : products.id, name : products.name, price : products.price, quantity:1};
+        addtoCart(item)
+    }
     return (
+      
         <>
             <div className="product-list">
                 {products.map((product) => (
@@ -24,7 +29,7 @@ export const ProductCard = ({products}) => {
                             )}
                         </p>
                         <p className="product-unit">{product.unit}</p>
-                        <button
+                        <button onClick={()=>handleAddtoCart(product)}
                             className="add-to-cart"
                             disabled={!product.availability}
                         >

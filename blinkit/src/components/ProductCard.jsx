@@ -34,6 +34,7 @@ export const ProductCard = ({products}) => {
                         >
                             {product.availability ? "Add to Cart" : "Out of Stock"}
                         </button>
+                        <button className="add-to-cart">Save in List</button>
                     </div>
                 ))}
             </div>

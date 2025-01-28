@@ -1,0 +1,75 @@
+/* OrderSummary.css */
+
+.order-summary-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #343a40;
+  }
+  
+  .address-section {
+    background: #ffffff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+  }
+  
+  .address-section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #495057;
+  }
+  
+  .selected-address {
+    padding: 10px;
+    background: #e9ecef;
+    border: 1px solid #adb5bd;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+  
+  .no-address {
+    font-size: 14px;
+    color: #868e96;
+    text-align: center;
+  }
+  
+  .address-manager {
+    margin: 20px 0;
+  }
+  
+  .checkout-section {
+    text-align: center;
+  }
+  
+  .checkout-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .checkout-button:hover {
+    background: #0056b3;
+  }
+  
+  .checkout-button:disabled {
+    background: #adb5bd;
+    cursor: not-allowed;
+  }

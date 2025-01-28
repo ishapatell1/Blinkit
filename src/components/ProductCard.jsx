@@ -2,12 +2,14 @@
 import "../css/productcard.css";
 import { useCart } from "../context/CartContext";
 import { useSaveList } from "../context/WishContext";
+import { toast } from "react-toastify";
 export const ProductCard = ({products}) => {
     const {addtoCart} = useCart();
     const {addtoSaveList} = useSaveList();
     const handleAddtoCart = (products)=>{
         const item = {id : products.id, name : products.name, price : products.price, quantity:1};
         addtoCart(item)
+        toast.success("item added successfully!");
     }
     return (
       

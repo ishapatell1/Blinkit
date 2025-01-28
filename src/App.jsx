@@ -8,11 +8,15 @@ import { Cart } from './pages/Cart'
 import { Search } from './pages/Search'
 import { ProductDetail } from './pages/ProductDetail'
 import { SavedList } from './pages/SavedList'
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css"; 
 function App() {
  const Applayout = ()=>{
+  const notify = () => toast("Wow so easy!");
+  notify()
   return(
     <>
+    <ToastContainer/>
     <Header/>
     <Outlet/>
     </>

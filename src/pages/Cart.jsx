@@ -2,14 +2,14 @@ import React from "react";
 import "../css/productcard.css";
 import { Link } from "react-router-dom";
 import { useCart } from "../context/CartContext";
-import { AddressManager } from "../components/AddressManager";
+import { OrderSummary } from "../components/OrderSummary";
 
 export const Cart = () => {
   const { items, totalAmount, totalQuantity, removeFromCart,increment, decrement } = useCart();
 
   return (
     <div>
-      <AddressManager/>
+     
       {items.length === 0 ? (
         <h1 className="add-to-cart">This Cart is empty  <Link to = "/saved">Go to Saved List</Link></h1>
        
@@ -35,6 +35,7 @@ export const Cart = () => {
           <h2>Total Quantity: {totalQuantity}</h2>
         </div>
       )}
+       <OrderSummary/>
     </div>
   );
 };

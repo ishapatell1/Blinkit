@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useAddress } from "../context/AddressContext";
 import "../css/address.css"
+import { toast } from "react-toastify";
 export const AddressManager = () => {
   const { addresses, add, remove, update, setDefault, selectedAddress} = useAddress();
   const [newAddress, setNewAddress] = useState({ id: "", street: "", city: "", country: "", zipCode: "" });
@@ -10,6 +11,7 @@ export const AddressManager = () => {
       add(newAddress);
       setNewAddress({ id: "", street: "", city: "", country: "", zipCode: "" }); // reset form
     }
+    toast.success("Address added successfully!");
   };
 
   const handleUpdateAddress = (id) => {

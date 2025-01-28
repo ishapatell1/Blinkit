@@ -1,8 +1,10 @@
 
 import "../css/productcard.css";
 import { useCart } from "../context/CartContext";
+import { useSaveList } from "../context/WishContext";
 export const ProductCard = ({products}) => {
     const {addtoCart} = useCart();
+    const {addtoSaveList} = useSaveList();
     const handleAddtoCart = (products)=>{
         const item = {id : products.id, name : products.name, price : products.price, quantity:1};
         addtoCart(item)
@@ -34,7 +36,7 @@ export const ProductCard = ({products}) => {
                         >
                             {product.availability ? "Add to Cart" : "Out of Stock"}
                         </button>
-                        <button className="add-to-cart">Save in List</button>
+                        <button className="add-to-cart" onClick={()=>addtoSaveList(product)}>Save in List</button>
                     </div>
                 ))}
             </div>

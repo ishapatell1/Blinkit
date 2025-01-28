@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/productcard.css";
+import { Link } from "react-router-dom";
 import { useCart } from "../context/CartContext";
 
 export const Cart = () => {
@@ -8,7 +9,8 @@ export const Cart = () => {
   return (
     <div>
       {items.length === 0 ? (
-        <h1>This Cart is empty</h1>
+        <h1 className="add-to-cart">This Cart is empty  <Link to = "/saved">Go to Saved List</Link></h1>
+       
       ) : (
         <div className="product-list">
           <h1>Cart Items</h1>

@@ -7,6 +7,7 @@ import { ProductList } from './pages/ProductList'
 import { Cart } from './pages/Cart'
 import { Search } from './pages/Search'
 import { ProductDetail } from './pages/ProductDetail'
+import { SavedList } from './pages/SavedList'
 
 function App() {
  const Applayout = ()=>{
@@ -26,6 +27,7 @@ function App() {
         <Route path = "/cn/:categoryId" element = {<ProductList/>}/>
         <Route path = "/s" element = {<Search/>}/>
         <Route path = "/prdetail/:id" element = {<ProductDetail/>}/>
+        <Route path = "/saved" element = {<SavedList/>}/>
         </Route>
       </Routes>
     </>

@@ -5,7 +5,7 @@ import { ProductCard } from "../components/ProductCard"
 import { SaleCoupounList} from "../components/SaleCoupounList"
 import {data} from "../utils/data"
 
-
+ 
 export const Home = ()=>{
     const navigate = useNavigate()
     const handleClick = (categoryId)=> {

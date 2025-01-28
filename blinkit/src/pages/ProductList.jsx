@@ -29,7 +29,7 @@ export const ProductList = () => {
         <div className="product-list-container">
             <CategoryBanner setChange={ setChange} />
             <div className="main-content">
-                <SideBar selectedCategory={selectedCategory}/>
+                <SideBar selectedCategory={selectedCategory} />
                 <div className="product-grid">
                     {/* Pass filteredProducts to ProductCard instead of all products */}
                     <ProductCard products={sortProducts} />

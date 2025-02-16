@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { ProductCard } from "../components/ProductCard"
 import {data} from "../utils/data"
 import { useSearchParams,Link } from "react-router-dom"
@@ -6,13 +6,20 @@ import { useSearchParams,Link } from "react-router-dom"
 
 export const Search = ()=> {
     const[search,setSearch] = useState("")
+    const [debouncedSearch, setDebouncedSearch] = useState("")
     const {categories} = data;
+    useEffect(()=>{
+      const timer = setTimeout(()=>{
+        setDebouncedSearch(search)
+      },500)
+      return ()=>clearTimeout(timer)
+    },[search])
     const handleSearchClick = (e)=>{
         let val = e.toLowerCase()
         console.log("Search Value:", val)
         setSearch(val)
     }
-    const filteredProducts = categories.flatMap((category)=> category.products.filter((product)=>product.name.toLowerCase().includes(search)))
+    const filteredProducts = categories.flatMap((category)=> category.products.filter((product)=>product.name.toLowerCase().includes(debouncedSearch)))
         console.log("Filtered Name" , filteredProducts)
     
     return(
@@ -46,7 +53,7 @@ export const Search = ()=> {
       </div>
     </div>
                 <h3>Did you mean? <strong>{search}</strong></h3>
-        {filteredProducts.length>0? ( <ProductCard products={filteredProducts}/> ): (<h1>Can't Find Any Result for <strong>{search}</strong></h1>)}
+        {filteredProducts.length>0? ( <ProductCard products={filteredProducts}/> ): (<h1>Can't Find Any Result for <strong>{debouncedSearch}</strong></h1>)}
        
         </>
     )
